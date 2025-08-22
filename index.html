@@ -1,48 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho_menu">
-            <a class="cabecalho_menu_link" href="index.html">Home</a>
-            <a class="cabecalho_menu_link" href="about.html">Sobre mim</a>
-            <a class="cabecalho_menu_link" href="curriculo.html">Curriculo</a>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Meu Portfólio</h1>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
         </nav>
     </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-        <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível<strong class="titulo-destaque"> com um Front-end de qualidade!</strong></h1>
-    
-        <p class="apresentacao__conteudo__texto">Olá! Sou Washington Barsotti, Desenvolvedor Front-end com especialidade em 
-        <strong> React, HTML e CSS</strong>. 
-        Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
-
-        <div class="apresentacao__links">
-            <h2 class="apresentacao__links__subtitulo"> Acesse as minhas redes:</h2>
-            <a class="apresentacao__links__navegacao" href="https://github.com/BarsottiX">
-                <img src="./assets/Logo Github-2.png"> 
-                Github
-            </a>
-            <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/washington-barsotti/">
-                <img src="./assets/Logo linkedin.png"> 
-                Linkedin
-            </a>
-            <a class="apresentacao__links__navegacao" href="https://www.instagram.com/barsotti_w/">
-                <img src="./assets/Instagram.png"> 
-                instagram
-            </a>
+    <section id="Sobre">
+        <h2>Sobre mim</h2>
+        <p> Olá, me chamo Washington! <br>Desenvolvedor em formação, apaixonado por tecnologia e por resolver problemas de forma criativa. Atualmente trabalho como Analista de Sistemas Júnior, onde utilizo Python para automação e bots, SQL para consultas e relatórios, além de atuar com JavaScript, HTML e CSS em projetos de front-end.
+        <br>🚀 Estou me especializando em Desenvolvimento Full Stack, com foco em Node.js e boas práticas de programação, sempre buscando evoluir minhas habilidades para criar soluções eficientes e que gerem impacto real.
+        <br>✨ O que me motiva: aprender constantemente, transformar ideias em código e desenvolver projetos que unem tecnologia e inovação.</p>
+    </section>
+    <section id="Projetos">
+        <h2>Projetos</h2>
+        <div class="projetos-container">
+            <div class="projeto-card">Projeto 1</div>
+            <div class="projeto-card">Projeto 2</div>
+            <div class="projeto-card">Projeto 3</div>
         </div>
-        </section>
-        <img class="apresentacao__imagem" src="./assets/imgwashington.png" alt="Foto Washington Barsotti">
-</main>
-        <footer class="rodape">
-            <p>Desenvolvido por Washington.</p>
-        </footer>
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="text" placeholder="Seu e-mail" required>
+            <textarea placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form> 
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
